@@ -37,11 +37,25 @@ export default function SearchBar({ onSearch, onGeolocate, loading }) {
 }
 
 const s = {
-  wrapper: { display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center", width: "100%", maxWidth: 680, margin: "0 auto" },
+  wrapper: { display: "flex",gap: 12,flexWrap: "wrap", justifyContent: "center", width: "100%", maxWidth: 680, margin: "0 auto" },
   form: { flex: 1, minWidth: 260 },
   inputWrap: { display: "flex", alignItems: "center", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 14, overflow: "hidden", transition: "border-color 0.2s" },
   searchIcon: { fontSize: 16, padding: "0 14px", opacity: 0.5, flexShrink: 0 },
   input: { flex: 1, background: "transparent", border: "none", outline: "none", color: "#e5e7eb", fontSize: 15, padding: "16px 0", fontFamily: "'DM Sans', sans-serif" },
-  searchBtn: { background: "linear-gradient(135deg, #3b82f6, #06b6d4)", color: "#fff", border: "none", padding: "14px 22px", fontSize: 14, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", cursor: "pointer", transition: "opacity 0.2s", flexShrink: 0 },
+  searchBtn: {
+  background: "linear-gradient(135deg, #3b82f6, #06b6d4)",
+  color: "#fff",
+  border: "none",
+  padding: "0 32px",
+  margin: "4px",
+  borderRadius: 9999,
+  height: 48,
+  fontSize: 14,
+  fontWeight: 700,
+  fontFamily: "'DM Sans', sans-serif",
+  cursor: "pointer",
+  transition: "all 0.2s ease",
+  flexShrink: 0,
+},
   geoBtn: { background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.12)", color: "#9ca3af", padding: "14px 20px", borderRadius: 14, fontSize: 14, fontWeight: 600, fontFamily: "'DM Sans', sans-serif", cursor: "pointer", transition: "all 0.2s", whiteSpace: "nowrap" },
 };
